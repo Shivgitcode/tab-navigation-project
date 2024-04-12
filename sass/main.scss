@@ -1,0 +1,78 @@
+// custom variable
+
+$primary: #11101d;
+
+$secondary: #e4e9f7;
+
+$tooltip-bg: white;
+$tooltip-opacity: 1;
+$tooltip-color: black;
+
+$tooltip-font-size: 15px;
+
+$tooltip-arrow-height: 0;
+
+$tooltip-margin: 20px;
+$tooltip-padding-x: 10px;
+
+
+:root {
+    --my-color: blue;
+}
+
+.width {
+    width: fit-content;
+}
+
+
+
+
+
+.hide {
+    overflow: hidden;
+    max-width: 0px;
+    transition: all 0.5s ease-out;
+
+
+}
+
+.unhide {
+    overflow: visible;
+    max-width: 150px;
+    transition: all 0.8s ease-out;
+
+}
+
+
+@keyframes hide {
+    0% {
+        overflow: visible;
+        max-width: 100%;
+
+    }
+
+    100% {
+        overflow: hidden;
+        max-width: 0%;
+    }
+
+}
+
+@keyframes unhide {
+    0% {
+        overflow: hidden;
+        max-width: 0%;
+    }
+
+    100% {
+        overflow: visible;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap'
