@@ -15,6 +15,15 @@ $tooltip-arrow-height: 0;
 $tooltip-margin: 20px;
 $tooltip-padding-x: 10px;
 
+$btn-border-width: 0px;
+
+$btn-padding-x: 5px;
+$btn-padding-y: 5px;
+
+
+
+
+
 
 :root {
     --my-color: blue;
@@ -26,49 +35,76 @@ $tooltip-padding-x: 10px;
 
 
 
+li {
+    border-radius: 10px;
+    transition: all 0.3s;
+
+
+}
+
+li:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+
+
+
 
 
 .hide {
-    overflow: hidden;
+
+    overflow-x: hidden;
     max-width: 0px;
+
+    padding: 0px;
+    margin: 0px;
+    white-space: nowrap;
+
+    opacity: 0;
     transition: all 0.5s ease-out;
 
 
 }
 
 .unhide {
+
+
     overflow: visible;
     max-width: 150px;
-    transition: all 0.8s ease-out;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    transition: all 0.5s ease-out;
+
 
 }
 
 
-@keyframes hide {
-    0% {
-        overflow: visible;
-        max-width: 100%;
+// @keyframes hide {
+//     0% {
+//         overflow: visible;
+//         max-width: 100%;
 
-    }
+//     }
 
-    100% {
-        overflow: hidden;
-        max-width: 0%;
-    }
+//     100% {
+//         overflow: hidden;
+//         max-width: 0%;
+//     }
 
-}
+// }
 
-@keyframes unhide {
-    0% {
-        overflow: hidden;
-        max-width: 0%;
-    }
+// @keyframes unhide {
+//     0% {
+//         overflow: hidden;
+//         max-width: 0%;
+//     }
 
-    100% {
-        overflow: visible;
-        max-width: 100%;
-    }
-}
+//     100% {
+//         overflow: visible;
+//         max-width: 100%;
+//     }
+// }
 
 
 

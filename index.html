@@ -24,63 +24,64 @@
 <body>
     <div class="d-flex bg-secondary main">
 
-        <div class="px-4 bg-primary width min-vh-100 h-100 d-flex flex-column justify-content-between sidebar">
+        <div class="px-4 pe-5 bg-primary width min-vh-100 h-100 d-flex flex-column justify-content-between sidebar">
 
             <nav class="d-flex flex-column w-100">
-                <div class="my-4" id="collapse2">
+                <div class="my-4 ms-3" id="collapse2">
                     <i data-feather="align-justify"></i>
                 </div>
 
-                <ul class="list-group d-flex flex-column gap-5 py-4">
-                    <li class="list-unstyled tt d-flex flex-row align-items-center input-group"><i
-                            data-feather="search"></i>
-                        <div class="text-white ms-3 fw-medium">Search</div>
+                <ul class="list-group d-flex flex-column gap-4 py-4">
+                    <li class="list-unstyled tt d-flex flex-row  align-items-center input-group ps-3 py-2">
+                        <i data-feather="search"></i>
+                        <div class="text-white ms-3 fw-medium hide">Search</div>
                     </li>
-                    <li class="list-unstyled tt d-flex flex-row align-items-center" data-bs-animation="true"
-                        data-bs-offset="0,20" data-bs-title="user" data-bs-custom-class="cutom-tooltip"
+                    <li class="list-unstyled tt d-flex flex-row align-items-center ps-3 py-2" data-bs-animation="true"
+                        data-bs-offset="0,13" data-bs-title="user" data-bs-custom-class="cutom-tooltip"
                         data-bs-placement="right">
-                        <i data-feather="user"></i>
-                        <div class="text-white ms-3 fw-medium">User</div>
+                        <i data-feather="user" class="hoverbg"></i>
+                        <div class="text-white ms-3 fw- fw-medium hide">User</div>
                     </li>
-                    <li class="list-unstyled tt d-flex flex-row align-items-center" data-bs-animation="true"
-                        data-bs-offset="0,20" data-bs-title="chat" data-bs-custom-class="custom-tooltip"
-                        data-bs-placement="right"><i data-feather="message-square"></i>
-                        <div class="text-white ms-3 fw-medium  ">Chat</div>
+                    <li class="list-unstyled tt d-flex flex-row align-items-center ps-3 py-2 " data-bs-animation="true"
+                        data-bs-offset="0,13" data-bs-title="chat" data-bs-custom-class="custom-tooltip"
+                        data-bs-placement="right">
+                        <i data-feather="message-square"></i>
+                        <div class="text-white ms-3 fw-medium hide ">Chat</div>
                     </li>
-                    <li class="list-unstyled tt d-flex flex-row align-items-center" data-bs-animation="true"
-                        data-bs-offset="0,20" data-bs-title="analytics" data-bs-custom-class="custom-tooltip"
+                    <li class="list-unstyled tt d-flex flex-row align-items-center ps-3 py-2" data-bs-animation="true"
+                        data-bs-offset="0,13" data-bs-title="analytics" data-bs-custom-class="custom-tooltip"
                         data-bs-placement="right"><i data-feather="pie-chart">
                         </i>
-                        <div class="text-white ms-3 fw-medium  ">analytics</div>
+                        <div class="text-white ms-3 fw-medium hide  ">analytics</div>
                     </li>
-                    <li class="list-unstyled tt d-flex flex-row align-items-center" data-bs-animation="true"
-                        data-bs-offset="0,20" data-bs-title="files" data-bs-custom-class="custom-tooltip"
+                    <li class="list-unstyled tt d-flex flex-row align-items-center ps-3 py-2" data-bs-animation="true"
+                        data-bs-offset="0,13" data-bs-title="files" data-bs-custom-class="custom-tooltip"
                         data-bs-placement="right"><i data-feather="folder"></i>
-                        <div class="text-white ms-3 fw-medium  ">files</div>
+                        <div class="text-white ms-3 fw-medium hide  ">files</div>
                     </li>
-                    <li class="list-unstyled tt d-flex flex-row align-items-center" data-bs-animation="true"
-                        data-bs-offset="0,20" data-bs-title="cart" data-bs-custom-class="custom-tooltip"
+                    <li class="list-unstyled tt d-flex flex-row align-items-center ps-3 py-2" data-bs-animation="true"
+                        data-bs-offset="0,13" data-bs-title="cart" data-bs-custom-class="custom-tooltip"
                         data-bs-placement="right"><i data-feather="shopping-cart"></i>
-                        <div class="text-white ms-3 fw-medium  ">cart</div>
+                        <div class="text-white ms-3 fw-medium hide  ">cart</div>
                     </li>
-                    <li class="list-unstyled tt d-flex flex-row align-items-center" data-bs-animation="true"
-                        data-bs-offset="0,20" data-bs-title="like" data-bs-custom-class="custom-tooltip"
+                    <li class="list-unstyled tt d-flex flex-row align-items-center ps-3 py-2" data-bs-animation="true"
+                        data-bs-offset="0,13" data-bs-title="like" data-bs-custom-class="custom-tooltip"
                         data-bs-placement="right"><i data-feather="heart"></i>
-                        <div class="text-white ms-3 fw-medium ">like</div>
+                        <div class="text-white ms-3 fw-medium hide ">like</div>
                     </li>
-                    <li class="list-unstyled tt d-flex flex-row align-items-center" data-bs-animation="true"
-                        data-bs-offset="0,20" data-bs-title="settings" data-bs-custom-class="custom-tooltip"
+                    <li class="list-unstyled tt d-flex flex-row align-items-center ps-3 py-2" data-bs-animation="true"
+                        data-bs-offset="0,13" data-bs-title="settings" data-bs-custom-class="custom-tooltip"
                         data-bs-placement="right"><i data-feather="settings"></i>
-                        <div class="text-white ms-3 fw-medium    ">settings</div>
+                        <div class="text-white ms-3 fw-medium hide    ">settings</div>
                     </li>
                 </ul>
 
 
 
             </nav>
-            <div class="py-4 d-flex flex-row align-items-center" id="collapse">
+            <div class="py-4 d-flex flex-row align-items-center ps-3 py-2" id="collapse">
                 <i data-feather="toggle-left"></i>
-                <span class="text-white ms-3 fw-medium">dark mode</span>
+                <span class="text-white ms-3 fw- fw-medium hide">Dark mode</span>
 
             </div>
         </div>
