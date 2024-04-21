@@ -8,13 +8,22 @@
   width: fit-content;
 }
 
+.min-h {
+  min-height: 600px;
+}
+
+.min-w {
+  min-width: 100%;
+}
+
 li {
-  border-radius: 10px;
-  transition: all 0.3s;
+  transform: translateY(0px);
+  transition: all 0.5s;
 }
 
 li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.5s;
 }
 
 .hide {
@@ -34,6 +43,64 @@ li:hover {
   padding: 0;
   white-space: nowrap;
   transition: all 0.5s ease-out;
+}
+
+nav {
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+  background: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  top: 25px;
+  left: 33px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.icons {
+  color: #11101d;
+}
+
+li {
+  position: relative;
+  z-index: 10;
+}
+
+nav ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(0px);
+}
+
+nav ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(83px);
+}
+
+nav ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(162px);
+}
+
+nav ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(243px);
+}
+
+nav ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(310px);
 }
 
 /*!
