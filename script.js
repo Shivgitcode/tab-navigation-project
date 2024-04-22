@@ -1,5 +1,6 @@
 const items = document.querySelector("ul")
 const sidebar = document.querySelector(".sidebar")
+const render = document.querySelector(".dark")
 
 const links = [...items.children]
 console.log(links)
@@ -34,8 +35,11 @@ links.forEach((link) => {
 
 
 
+
 collapse.addEventListener("click", () => {
     main.classList.toggle("bg-dark")
     dash.classList.toggle("text-white")
+    render.classList.toggle("dark")
+
 
 })

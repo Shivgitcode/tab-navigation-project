@@ -23,15 +23,15 @@
 
 <body class="w-100 h-100 ">
     <div
-        class="d-flex bg-secondary main flex-column-reverse w-25 min-h mx-auto mt-5   rounded-3  align-items-center justify-content-between overflow-hidden">
+        class="d-flex bg-secondary main flex-column-reverse w-25 min-h mx-auto mt-5   rounded-3  align-items-center justify-content-between position-relative">
 
-        <div class="px-4 pe-5 bg-primary  w-100  d-flex sidebar align-items-bottom  rounded-3">
+        <div class="px-4 pe-5 bg-primary  w-100  d-flex sidebar align-items-bottom  rounded-3 ">
 
             <nav class="d-flex w-100">
 
                 <ul class="d-flex justify-content-center w-100 gap-5 ">
                     <li class=" d-flex align-items-center ps-3">
-                        <i data-feather="search" class="icon"></i>
+                        <i data-feather="search" class="icons"></i>
                         <!-- <div class="text-white ms-3 fw-medium hide">Search</div> -->
                     </li>
                     <li class="list-unstyled  d-flex flex-row align-items-center ps-3">
@@ -70,8 +70,8 @@
                         data-bs-placement="right"><i data-feather="settings"></i>
                         <div class="text-white ms-3 fw-medium hide    ">settings</div>
                     </li> -->
-                    <li class="py-4 d-flex flex-row align-items-center" id="collapse">
-                        <i data-feather="toggle-left" class="icon"></i>
+                    <li class="py-4 d-flex flex-row align-items-center">
+                        <i data-feather="settings" class="icon"></i>
                         <span class="text-white ms-3 fw-medium hide">Dark mode</span>
 
                     </li>
@@ -83,13 +83,18 @@
 
             </nav>
 
-        </div>
-        <div class="d-flex w-100 h-100">
-            <div class="mx-5 my-3 fs-3 min-h min-w dash bg-danger">Dashboard</div>
-            <div class="mx-5 my-3 fs-3 dash min-h min-w bg-primary">Dashboard</div>
-            <div class="mx-5 my-3 fs-3 dash w-100 h-100">Dashboard</div>
+
+
 
         </div>
+        <h3 class="py-3 dash">Dashboard</h3>
+        <div class="py-4 d-flex flex-row align-items-center position-absolute myposition " id="collapse">
+            <i data-feather="toggle-left" class="dark w-100"></i>
+            <span class="text-white ms-3 fw-medium hide">Dark mode</span>
+
+        </div>
+
+
 
 
     </div>
